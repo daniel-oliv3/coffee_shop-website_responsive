@@ -58,6 +58,17 @@ section {
   display: none;
 }
 
+.login-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+}
+
 .home {
   background: url(../images/home-bg.jpg) no-repeat;
   background-size: cover;
