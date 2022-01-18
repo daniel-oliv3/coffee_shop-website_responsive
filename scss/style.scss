@@ -54,5 +54,50 @@ html {
     &::-webkit-scrollbar-thumb {
         background: $main-color;
     }
+}
 
+section {
+    padding: 5rem 1rem;
+}
+
+.header {
+    z-index: 1000;
+    padding: 4rem 0;
+
+    .logo {
+        font-size: 2.5rem;
+        color: $white;
+        font-weight: bolder;
+    }
+
+    .nav {
+
+        a{
+            font-size: 2rem;
+            margin-right: 2rem;
+            color: $white;
+
+            &:hover {
+                text-decoration: underline !important;
+                text-underline-offset: .5rem;
+            }
+        }
+    }
+
+    .icons div {
+        font-size: 2.5rem;
+        color: $white;
+        margin-left: 2rem;
+        cursor: pointer;
+    }
+
+    #menu-btn {
+        display: none;
+    }
+}
+
+.home {
+    background: url(../images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
