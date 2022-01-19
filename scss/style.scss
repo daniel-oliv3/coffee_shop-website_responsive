@@ -105,6 +105,23 @@ section {
     width: 100%;
     background: rgba(0, 0, 0, .8);
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+
+    form {
+        width: 50rem;
+        padding: 4rem;
+        background: $white;
+        text-align: center;
+
+        .logo {
+            font-size: 2.5rem;
+            color: $main-color;
+            font-weight: bolder;
+        }
+        
+    }
 }
 
 .home {

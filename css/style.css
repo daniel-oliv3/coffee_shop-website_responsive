@@ -67,6 +67,20 @@ section {
   width: 100%;
   background: rgba(0, 0, 0, 0.8);
   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.login-form form {
+  width: 50rem;
+  padding: 4rem;
+  background: #fff;
+  text-align: center;
+}
+.login-form form .logo {
+  font-size: 2.5rem;
+  color: #512a10;
+  font-weight: bolder;
 }
 
 .home {
