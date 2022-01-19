@@ -135,6 +135,14 @@ section {
   width: 100%;
   margin-bottom: 2rem;
 }
+.login-form form .account {
+  padding: 1.5rem 0.5rem;
+  background: #eee;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #666;
+  margin-bottom: 0;
+}
 
 .home {
   background: url(../images/home-bg.jpg) no-repeat;

@@ -177,6 +177,12 @@ section {
             width: 100%;
             margin-bottom: 2rem;
         }
+
+        .account {
+            padding: 1.5rem .5rem;
+            background: $light-bg;
+            @include graph-text(1.5rem);
+        }
     }
 }
 
