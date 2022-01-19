@@ -57,6 +57,13 @@ html {
     }
 }
 
+@keyframes fadeIn {
+    0% {
+        transform: translate(-2rem);
+        opacity: 0;
+    }
+}
+
 section {
     padding: 5rem 1rem;
 }
@@ -121,16 +128,35 @@ section {
     height: 100%;
     width: 100%;
     background: rgba(0, 0, 0, .8);
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     padding: 2rem;
+
+    &:active {
+        display: flex;
+    }
 
     form {
         width: 50rem;
         padding: 4rem;
         background: $white;
         text-align: center;
+        position: relative;
+        animation: fadeIn .2s linear;
+
+        #close-login-form {
+            position: absolute;
+            top: -4rem;
+            right: 0;
+            font-size: 3rem;
+            cursor: pointer;
+            color: $white;
+
+            &:hover {
+                transform: rotate(90deg);
+            }
+        }
 
         .logo {
             font-size: 2.5rem;
@@ -141,6 +167,7 @@ section {
         h3 {
             padding: 1rem 0;
             @include title-text(2rem);
+            margin-top: 1rem;
         }
 
         .box {
@@ -182,6 +209,14 @@ section {
             padding: 1.5rem .5rem;
             background: $light-bg;
             @include graph-text(1.5rem);
+
+            a {
+                color: $main-color;
+
+                &:hover {
+                    text-decoration: underline !important;
+                }
+            }
         }
     }
 }

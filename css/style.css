@@ -26,6 +26,12 @@ html::-webkit-scrollbar-thumb {
   background: #512a10;
 }
 
+@keyframes fadeIn {
+  0% {
+    transform: translate(-2rem);
+    opacity: 0;
+  }
+}
 section {
   padding: 5rem 1rem;
 }
@@ -81,16 +87,32 @@ section {
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.8);
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   padding: 2rem;
+}
+.login-form:active {
+  display: flex;
 }
 .login-form form {
   width: 50rem;
   padding: 4rem;
   background: #fff;
   text-align: center;
+  position: relative;
+  animation: fadeIn 0.2s linear;
+}
+.login-form form #close-login-form {
+  position: absolute;
+  top: -4rem;
+  right: 0;
+  font-size: 3rem;
+  cursor: pointer;
+  color: #fff;
+}
+.login-form form #close-login-form:hover {
+  transform: rotate(90deg);
 }
 .login-form form .logo {
   font-size: 2.5rem;
@@ -102,6 +124,7 @@ section {
   font-size: 2rem;
   text-transform: capitalize;
   color: #222;
+  margin-top: 1rem;
 }
 .login-form form .box {
   width: 100%;
@@ -142,6 +165,12 @@ section {
   line-height: 2;
   color: #666;
   margin-bottom: 0;
+}
+.login-form form .account a {
+  color: #512a10;
+}
+.login-form form .account a:hover {
+  text-decoration: underline !important;
 }
 
 .home {
