@@ -59,7 +59,7 @@ html {
 
 @keyframes fadeIn {
     0% {
-        transform: translate(-2rem);
+        transform: translateY(-2rem);
         opacity: 0;
     }
 }
@@ -87,6 +87,11 @@ section {
 .header {
     z-index: 1000;
     padding: 4rem 0;
+
+    &.active {
+        padding: 2rem 0;
+        background: $main-color;
+    }
 
     .logo {
         font-size: 2.5rem;
