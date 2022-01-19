@@ -30,6 +30,21 @@ section {
   padding: 5rem 1rem;
 }
 
+.link-btn {
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  display: inline-block;
+  border: 0.1rem solid #512a10;
+  color: #512a10;
+  background: none;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+.link-btn:hover {
+  background: #512a10;
+  color: #fff;
+}
+
 .header {
   z-index: 1000;
   padding: 4rem 0;
@@ -94,6 +109,31 @@ section {
   border: 0.1rem solid #512a10;
   font-size: 1.6rem;
   margin: 1rem 0;
+}
+.login-form form .flex {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+.login-form form .flex label {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #666;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+.login-form form .flex a {
+  font-size: 1.5rem;
+  color: #512a10;
+  margin-left: auto;
+}
+.login-form form .flex a:hover {
+  text-decoration: underline !important;
+}
+.login-form form .link-btn {
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
 .home {

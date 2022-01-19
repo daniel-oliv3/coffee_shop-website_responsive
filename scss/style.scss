@@ -35,6 +35,7 @@ $box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     font-size: $graphSize;
     line-height: 2;
     color: $light-color;
+    margin-bottom: 0;
 }
 
 html {
@@ -58,6 +59,22 @@ html {
 
 section {
     padding: 5rem 1rem;
+}
+
+.link-btn {
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    display: inline-block;
+    border: $border;
+    color: $main-color;
+    background: none;
+    cursor: pointer;
+    font-size: 1.7rem;
+
+    &:hover {
+        background: $main-color;
+        color: $white;
+    }
 }
 
 .header {
@@ -132,6 +149,33 @@ section {
             border: $border;
             font-size: 1.6rem;
             margin: 1rem 0;
+        }
+
+        .flex {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            margin: 1rem 0;
+
+            label {
+                @include graph-text(1.5rem);
+                cursor: pointer;
+            }
+
+            a {
+                font-size: 1.5rem;
+                color: $main-color;
+                margin-left: auto;
+
+                &:hover {
+                    text-decoration: underline !important;
+                }
+            }
+        }
+
+        .link-btn {
+            width: 100%;
+            margin-bottom: 2rem;
         }
     }
 }
