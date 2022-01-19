@@ -82,6 +82,19 @@ section {
   color: #512a10;
   font-weight: bolder;
 }
+.login-form form h3 {
+  padding: 1rem 0;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #222;
+}
+.login-form form .box {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  border: 0.1rem solid #512a10;
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}
 
 .home {
   background: url(../images/home-bg.jpg) no-repeat;

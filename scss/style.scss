@@ -120,7 +120,19 @@ section {
             color: $main-color;
             font-weight: bolder;
         }
-        
+
+        h3 {
+            padding: 1rem 0;
+            @include title-text(2rem);
+        }
+
+        .box {
+            width: 100%;
+            padding: 1.2rem 1.4rem;
+            border: $border;
+            font-size: 1.6rem;
+            margin: 1rem 0;
+        }
     }
 }
 
